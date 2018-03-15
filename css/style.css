@@ -6,6 +6,23 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+.navbar-brand {
+	padding: 0 !important;
+}
+
+/* .navbar {
+	display: inline-block !important;
+	opacity: 0.999999 !important;
+}
+
+.navbar-brand {
+	opacity: 0.999999 !important;
+}
+
+.navbar-nav {
+	opacity: 0.999999 !important;
+} */
+
 h1 {
 	font-weight: 700;
 }
