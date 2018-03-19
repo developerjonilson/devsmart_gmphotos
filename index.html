@@ -14,12 +14,17 @@
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="css/owlcarousel/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="css/reset-expandable-image-gallery.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style-expandable-image-gallery.css"> <!-- Resource style -->
+
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
+<script type="text/javascript" src="js/modernizr.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,8 +42,8 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-      <a class="navbar-brand page-scroll" href="#page-top"> <img src="img/logo.png" alt="LOGO"> </a> </div>
-      <!-- <a class="navbar-brand page-scroll" href="#page-top"> <i class="fa fa-paper-plane-o"></i> Modus</a> </div> -->
+      <a class="navbar-brand page-scroll" href=""> <img src="img/logo.png" alt="LOGO"> </a> </div>
+      <!-- <a class="navbar-brand page-scroll" href="#page-top"> <img src="img/logo.png" alt="LOGO"> </a> </div> -->
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -143,6 +148,36 @@
     <div class="space"></div>
   </div>
 </div>
+
+
+  <br><br><br>
+  <section class="cd-single-item">
+   <div class="cd-slider-wrapper">
+      <ul class="cd-slider">
+         <li class="selected"><img src="img/portfolio/casamentos/01.jpg" alt="Product Image 1"></li>
+      </ul> <!-- cd-slider -->
+
+      <ul class="cd-slider-navigation">
+         <li><a href="#0" class="cd-prev inactive">Next</a></li>
+         <li><a href="#0" class="cd-next">Prev</a></li>
+      </ul> <!-- cd-slider-navigation -->
+
+      <a href="#0" class="cd-close">Close</a>
+   </div> <!-- cd-slider-wrapper -->
+
+   <div class="cd-item-info">
+      <h2>Produt Title</h2>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <button class="add-to-cart">Add to cart</button>
+   </div> <!-- cd-item-info -->
+</section> <!-- cd-single-item -->
+
+<section class="cd-content">
+   <!--  other content here -->
+</section>
+  <br><br><br>
+
+
 <!-- Portfolio Section -->
 <div id="works">
   <div class="container"> <!-- Container -->
@@ -154,30 +189,18 @@
     </div>
     <div class="categories">
       <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">Todos</a></li>
-            <li><a href="#" data-filter=".marriage">Casamentos</a></li>
-            <li><a href="#" data-filter=".birthday">Aniversários</a></li>
-            <li><a href="#" data-filter=".events">Eventos</a></li>
-            <li><a href="#" data-filter=".casual">Casuais</a></li>
-          </ol>
-        </li>
+        <ol class="type row">
+          <li class="space-gallery"><a href="#" data-filter="*" class="active">Todos</a></li>
+          <li class="space-gallery"><a href="#" data-filter=".marriage">Casamentos</a></li>
+          <li class="space-gallery"><a href="#" data-filter=".birthday">Aniversários</a></li>
+          <li class="space-gallery"><a href="#" data-filter=".events">Eventos</a></li>
+          <li class="space-gallery"><a href="#" data-filter=".casual">Casuais</a></li>
+        </ol>
       </ul>
       <div class="clearfix"></div>
     </div>
     <div class="row">
       <div class="portfolio-items">
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 marriage">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01.jpg" title="Project description" rel="prettyPhoto">
-              <div class="hover-text">
-                <h4>Titulo</h4>
-                <p>Subtitulo</p>
-              </div>
-              <img src="img/portfolio/01.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 birthday">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/02.jpg" title="Project description" rel="prettyPhoto">
@@ -421,8 +444,6 @@
         <ul>
           <li><a href="https://www.facebook.com/gabriel.magalhaesmacedo"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          <li><a href="#"><i class="fa fa-github"></i></a></li>
           <li><a href="https://www.instagram.com/gm_photos_"><i class="fa fa-instagram"></i></a></li>
           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
@@ -437,7 +458,8 @@
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.1.11.1.js"></script> -->
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/SmoothScroll.js"></script>
@@ -447,37 +469,13 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 <script type="text/javascript" src="js/contact_me.js"></script>
 <script type="text/javascript" src="js/owl.carousel/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+<script type="text/javascript" src="js/main-expandable-image-gallery.js"></script>
 
 <!-- Javascripts
     ================================================== -->
 <script type="text/javascript" src="js/main.js"></script>
-
-<!-- <script>
-  $(document).ready(function() {
-    $('.carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        600: {
-          items: 3,
-          nav: false
-        },
-        1000: {
-          items: 5,
-          nav: true,
-          loop: false,
-          margin: 20
-        }
-      }
-    })
-  })
-</script> -->
+<script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>
