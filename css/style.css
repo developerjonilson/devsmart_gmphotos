@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
@@ -11,7 +11,7 @@ body, html {
 }
 
 .navbar-nav {
-	font-size: 13px;
+	font-size: 12px;
 }
 
 .space-gallery {
@@ -104,7 +104,6 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	/* background: #E75926; */
 	background: #E19C3A;
 	margin: 0 auto;
 	margin-bottom: 30px;
@@ -116,7 +115,6 @@ hr {
 	border-bottom: 0;
 	letter-spacing: 1px;
 	background: #333;
-	text-transform: uppercase;
 }
 .navbar-custom .navbar-brand {
 	font-weight: 600;
